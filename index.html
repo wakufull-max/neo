@@ -73,7 +73,9 @@ header{position:sticky;top:38px;z-index:50;padding:13px 0;background:rgba(255,25
 .hero::after{content:"";position:absolute;bottom:-160px;left:-160px;width:480px;height:480px;background:radial-gradient(circle,rgba(255,106,0,.08) 0%,transparent 65%);z-index:0}
 .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.12fr .88fr;gap:42px;align-items:center}
 .kicker{display:inline-flex;align-items:center;gap:8px;background:var(--orange-pale);border:1px solid rgba(255,106,0,.3);color:var(--orange-deep);font-weight:800;font-size:.82rem;padding:7px 16px;border-radius:30px;margin-bottom:18px}
-h1.hero-title{font-size:clamp(2.1rem,5.6vw,3.5rem);font-weight:900;line-height:1.28;margin-bottom:18px;letter-spacing:.01em;color:var(--ink)}
+h1.hero-title{font-size:clamp(1.9rem,5.6vw,3.5rem);font-weight:900;line-height:1.28;margin-bottom:18px;letter-spacing:.01em;color:var(--ink)}
+h1.hero-title .ln{display:block}
+@media(max-width:380px){h1.hero-title{font-size:1.72rem}}
 h1.hero-title .hl{position:relative;white-space:nowrap}
 h1.hero-title .hl::after{content:"";position:absolute;left:-1%;bottom:6px;width:102%;height:28%;background:var(--yellow);z-index:-1;border-radius:3px;opacity:.55}
 h1.hero-title .big{display:block;font-size:1.16em;color:var(--orange-deep)}
@@ -115,7 +117,8 @@ h1.hero-title .big{display:block;font-size:1.16em;color:var(--orange-deep)}
 /* section base */
 section.block{padding:72px 0}
 .eyebrow{display:inline-block;color:var(--orange-deep);font-weight:900;font-size:.88rem;letter-spacing:.12em;margin-bottom:10px}
-.sec-title{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:900;line-height:1.42;margin-bottom:14px;color:var(--ink)}
+.sec-title{font-size:clamp(1.55rem,4vw,2.5rem);font-weight:900;line-height:1.42;margin-bottom:14px;color:var(--ink)}
+.sec-title .ln{display:block}
 .sec-lead{color:var(--gray);font-weight:500;max-width:640px;margin-bottom:42px}
 .center{text-align:center}
 .center .sec-lead{margin-left:auto;margin-right:auto}
@@ -292,8 +295,8 @@ footer .pr-line{max-width:780px;margin:14px auto 0;font-size:.76rem;opacity:.7}
   <div>
     <span class="kicker rv">⭐ 20代の支持率 No.1／第二新卒・既卒・フリーター専門</span>
     <h1 class="hero-title rv">
-      経歴に自信がなくても、<br>
-      <span class="hl">ホワイト企業</span>から<br>
+      <span class="ln">経歴に自信がなくても、</span>
+      <span class="ln"><span class="hl">ホワイト企業</span>から</span>
       <span class="big">内定は取れる。</span>
     </h1>
     <p class="hero-sub rv">残業少なめ・離職率の低い"今ある優良求人"を、20代専門のプロが厳選して紹介。書類が通らない、面接が苦手──そんなあなたを、内定までまるごと伴走します。</p>
@@ -351,7 +354,7 @@ footer .pr-line{max-width:780px;margin:14px auto 0;font-size:.76rem;opacity:.7}
 <section class="block fear">
   <div class="wrap center">
     <span class="eyebrow rv">REALITY CHECK</span>
-    <h2 class="sec-title rv">そのまま1年経ったあなたを、<br>想像できますか？</h2>
+    <h2 class="sec-title rv"><span class="ln">そのまま1年経ったあなたを、</span><span class="ln">想像できますか？</span></h2>
     <p class="fear-lead rv">「いつか動こう」と思っているうちに、状況は静かに悪化します。動かないことのリスクは、あなたが思うよりずっと現実的です。</p>
   </div>
   <div class="wrap">
